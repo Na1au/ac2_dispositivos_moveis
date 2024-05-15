@@ -1,0 +1,33 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.shaw.ac2_dispositivos_moveis.EditExpenseActivity">
+
+    <TextView
+        android:id="@+id/textViewExpense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nome: Expense Name, Valor: R$ 0.00, Data: 2024-05-09"
+        app:layout_constraintEnd_toStartOf="@id/buttonEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        app:layout_constraintEnd_toStartOf="@id/buttonSendText"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/buttonSendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar via texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
